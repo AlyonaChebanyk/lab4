@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/googleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomTextView"
+        android:text="Google"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888"/>
+    <TextView
+        style="@style/CustomTextView"
+        android:id="@+id/facebookTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Facebook"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888"/>
+    <TextView
+        style="@style/CustomTextView"
+        android:id="@+id/twitterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Twitter"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888"/>
+    <TextView
+        style="@style/CustomTextView"
+        android:id="@+id/xda-developerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xda-developer"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#888"/>
+
+</LinearLayout>

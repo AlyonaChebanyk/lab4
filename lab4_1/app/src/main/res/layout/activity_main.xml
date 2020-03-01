@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F7F1D5"
+    android:orientation="vertical">
+
+    <fragment
+        android:layout_margin="5dp"
+        android:id="@+id/firstFragment"
+        android:name="com.example.lab4_1.FirstFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <fragment
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:id="@+id/secondFragment"
+        android:name="com.example.lab4_1.SecondFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+        
+        <fragment
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/thirdFragment"
+            android:name="com.example.lab4_1.ThirdFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <fragment
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/fourthFragment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:name="com.example.lab4_1.FourthFragment"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>
