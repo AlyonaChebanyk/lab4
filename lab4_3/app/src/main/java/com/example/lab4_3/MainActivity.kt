@@ -11,9 +11,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Timber.plant(Timber.DebugTree())
         viewPager.adapter = ViewPagerAdapter(this)
 
+        //setting tab layout
         TabLayoutMediator(viewPagerTabLayout, viewPager) { tab, position ->
             tab.text = "Page ${position + 1}"
         }.attach()

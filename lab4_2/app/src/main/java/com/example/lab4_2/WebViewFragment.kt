@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.fragment_webview.*
 
-/**
- * A simple [Fragment] subclass.
- */
+//fragment that displays web page
 class WebViewFragment : Fragment() {
 
     override fun onCreateView(

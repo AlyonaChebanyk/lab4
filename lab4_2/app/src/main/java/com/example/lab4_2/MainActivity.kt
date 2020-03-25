@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity(), OnFragmentInteractionListener {
     }
 
     override fun onFragmentInteraction(url: String) {
+        //call a function in WebViewActivity that load url
         val fragment = supportFragmentManager
             .findFragmentById(R.id.webViewFragment) as WebViewFragment
         if (fragment.isInLayout) {

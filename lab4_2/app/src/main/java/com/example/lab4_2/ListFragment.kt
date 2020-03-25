@@ -8,9 +8,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.fragment_list.*
 
-/**
- * A simple [Fragment] subclass.
- */
+//fragment that displays list of sites
 class ListFragment : Fragment() {
 
     lateinit var mListener: OnFragmentInteractionListener
@@ -25,6 +23,7 @@ class ListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        //set on click listener each item of the list
         googleTextView.setOnClickListener {
             loadUrl("https://www.google.com/")
         }
@@ -42,6 +41,7 @@ class ListFragment : Fragment() {
         }
     }
 
+    //create OnFragmentInteractionListener instance
     override fun onAttach(context: Context) {
         super.onAttach(context)
         try {
@@ -53,7 +53,8 @@ class ListFragment : Fragment() {
         }
     }
 
-    fun loadUrl(url:String){
+    //load url to another fragment
+    private fun loadUrl(url:String){
         mListener.onFragmentInteraction(url)
     }
 
