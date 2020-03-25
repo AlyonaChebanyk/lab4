@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //set adapter to the view pager
         viewPager.adapter = ViewPagerAdapter(this)
 
         //setting tab layout

@@ -18,6 +18,8 @@ class PagerFragment: Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
+        //getting information about position and color of fragment
         arguments?.let {
             container.setBackgroundColor(it.getInt("color"))
             textView.text = "Page ${it.getInt("position")}"
